@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="api-body">
+        <div class="api-content-left">
+            <div class="api-nav">
+                <div class="api-nav-content-left">
+                    <img src="icon/icon_48.png" alt="API Tool"><span class="api-nav-title">API Tool</span>
+                </div>
+                <div class="api-nav-content-right">
+                    <ul>
+                        <li>Regulares</li>
+                        <li><button class="btn" id="search">Match</button></li>
+                        <li>Requisições</li>
+                        <li><button class="btn" id="req-get">Get</button></li>
+                        <li><button class="btn" id="req-post">Post</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="api-container">
+                <div class="input-field">
+                    <input type="text" id="form-data" placeholder="Root">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="form-params" placeholder="Parâmetros">
+                </div>
+            </div>
+        </div>
+        <div class="api-content-right">
+            <div class="api-content">
+                <div class="api-content-search-result">
+                    <div class="api-nav">
+                        <div class="api-nav-content-center">
+                            <ul>
+                                <li><input type="text" id="search-b" placeholder="(.*?)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="result-s">
+                        <pre><code></code></pre>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="api-content-result">
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="api-statusbar">
+        <div class="api-status-btn">
+            <button class="btn-status" id="remove-space">Remover espaços</button>
+            <button class="btn-status" id="remove-row">Remover quebra de linhas</button>
+            <button class="btn-status" id="decode-c">Decode URI Component</button>
+        </div>
+        <div class="api-status-text">
+            <span id="author">Por João Batista</span>
+            <span id="status">Evento: Nenhum evento</span>
+            <span id="matches">Mathes: 0</span>
+            <span id="phrases">Palavras: 0</span>
+            <span id="caracter">Caracteres: 0</span>
+        </div>
+    </div>
+    
+<script src="js/lib/jquery.js"></script>
+<script src="js/option/option.js"></script>
+</body>
+</html>
+

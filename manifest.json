@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "API Tool",
+	"short_name": "API Tool",
+	"version": "1.0.0",
+	"description": "Teste de APIs Web",
+	"icons": {
+		"16": "icon/icon_16.png",
+		"32": "icon/icon_32.png",
+		"48": "icon/icon_48.png",
+		"128": "icon/icon_128.png"
+	},
+	"browser_action": {
+		"default_title": "API Tool",
+		"default_icon": {
+			"16": "icon/icon_16.png",
+			"32": "icon/icon_32.png",
+			"48": "icon/icon_48.png",
+			"128": "icon/icon_128.png"
+		}
+	},
+	"background": {
+		"scripts": [
+			"js/lib/jquery.js",
+			"js/bg/bg.js"
+		],
+		"persistent": false
+    },
+	"permissions": ["activeTab", "<all_urls>"]
+}
+
