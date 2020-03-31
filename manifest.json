@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "API Tool",
-	"short_name": "API Tool",
+	"name": "Request Tool",
+	"short_name": "Request Tool",
 	"version": "1.0.0",
-	"description": "Teste de APIs Web",
+	"description": "Requisições GET e POST",
 	"icons": {
 		"16": "icon/icon_16.png",
 		"32": "icon/icon_32.png",
@@ -23,8 +23,7 @@
 		"scripts": [
 			"js/lib/jquery.js",
 			"js/bg/bg.js"
-		],
-		"persistent": false
+		]
     },
 	"permissions": ["activeTab", "<all_urls>"]
 }
